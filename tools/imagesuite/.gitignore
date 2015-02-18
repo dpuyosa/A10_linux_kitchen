@@ -1,0 +1,8 @@
+awflash
+awimage
+log2bin
+parsecfg
+*.img
+*.dump
+*.cfg
+*.decrypted
