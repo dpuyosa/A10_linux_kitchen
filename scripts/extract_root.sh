@@ -16,3 +16,4 @@ mkdir ramdisk
 cd ./ramdisk
 gunzip -c ../root.fex-ramdisk.gz | cpio -i
 rm -R ../root.fex-ramdisk.gz
+chown -R $(who -m | cut -f1 -d " ") ../

@@ -15,3 +15,4 @@ mount ../_output/bootfs.fex ./bootfs.temp
 cp -pR ./bootfs.temp/* ./bootfs/
 umount ./bootfs.temp
 rm -R ./bootfs.temp
+chown -R $(who -m | cut -f1 -d " ") ../

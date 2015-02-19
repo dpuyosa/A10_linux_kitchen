@@ -18,3 +18,4 @@ cp -pR ./system.temp/* ./system/
 umount ./system.temp
 rm -R ./system.temp
 rm ./system.img
+chown -R $(who -m | cut -f1 -d " ") ../
