@@ -25,6 +25,7 @@ mv ./_extract/*_SYSTEM_*.fex ./_output/system.fex
 mv ./_extract/*_BOOT_*.fex ./_output/root.fex
 mv ./_extract/*_RECOVERY_*.fex ./_output/recovery.fex
 mv ./_extract/*_BOOTLOADER_*.fex ./_output/bootfs.fex
+mv ./_extract/*_ENVIROMENT_*.fex ./_output/bootenv.fex
 mv ./_extract/*_DATA_*.fex ./_output/data.fex
 cd ./_extract
 

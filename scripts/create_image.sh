@@ -27,6 +27,12 @@ then
   cp ./_output/recovery.fex ./_input/recovery.fex
 fi
 
+if [ ! -e ./_input/bootenv.fex ]
+then
+  echo "copy original enviroment file"
+  cp ./_output/bootenv.fex ./_input/bootenv.fex
+fi
+
 #if [ ! -e ./_input/data.fex ]
 #then
 #  echo "copy original data file"
@@ -35,6 +41,7 @@ fi
 
 echo "Creating checksum files"
 ./tools/dragon/FileAddSum ./_input/bootfs.fex ./_input/vboot.fex
+./tools/dragon/FileAddSum ./_input/bootenv.fex ./_input/vbootenv.fex
 ./tools/dragon/FileAddSum ./_input/root.fex ./_input/vroot.fex
 ./tools/dragon/FileAddSum ./_input/system.fex ./_input/vsystem.fex
 ./tools/dragon/FileAddSum ./_input/recovery.fex ./_input/vrecovery.fex
