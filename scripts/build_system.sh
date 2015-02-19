@@ -8,5 +8,6 @@ if [ -e ../_temp/new-system.fex ]
 then
 rm ../_temp/new-system.fex
 fi
-./mkuserimg.sh ../_temp/system ../_temp/new-system.fex ext4 ../tmp 250M
+size=$(du -s --si ../_temp/system | cut -f1)
+./mkuserimg.sh ../_temp/system ../_temp/new-system.fex ext4 ../tmp $size
 mv ../_temp/new-system.fex ../_input/system.fex
