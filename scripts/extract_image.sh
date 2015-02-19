@@ -3,13 +3,13 @@ clear
 if [ -d ./_extract ]
 then
 echo "Removing old files in _extract"
-rm -R ./_extract
+rm -Rf ./_extract
 fi
 
 if [ -d ./_output ]
 then
 echo "Removing old files in _output"
-rm -R ./_output
+rm -Rf ./_output
 fi
 echo "Unpacking image from original.img and move to _extract"
 ./tools/imagesuite/awimage ./original.img
@@ -30,8 +30,5 @@ mv ./_extract/*_ENVIROMENT_*.fex ./_output/bootenv.fex
 mv ./_extract/*_DATA_*.fex ./_output/data.fex
 cd ./_extract
 
-chown -R $(who -m | cut -f1 -d " ") ../_extract
-chown -R $(who -m | cut -f1 -d " ") ../_output
-chown -R $(who -m | cut -f1 -d " ") ../_input
 
 echo "Done..."

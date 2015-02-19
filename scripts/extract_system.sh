@@ -9,7 +9,7 @@ if [ ! -d system ]
 then
 mkdir system
 else
-rm -R ./system/*
+rm -Rf ./system/*
 fi
 mkdir ./system.temp
 mount -o loop ../_output/system.fex ./system.temp

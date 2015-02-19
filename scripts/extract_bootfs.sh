@@ -8,7 +8,7 @@ if [ ! -d bootfs ]
 then
 mkdir bootfs
 else
-rm -R ./bootfs/*
+rm -Rf ./bootfs/*
 fi
 mkdir ./bootfs.temp
 mount ../_output/bootfs.fex ./bootfs.temp
