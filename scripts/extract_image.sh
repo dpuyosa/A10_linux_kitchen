@@ -20,7 +20,6 @@ do
        mv "$a" "$a.fex"
 done
 mkdir ./_output
-mkdir ./_input
 echo "Moving important files to _output"
 mv ./_extract/*_SYSTEM_*.fex ./_output/system.fex
 mv ./_extract/*_BOOT_*.fex ./_output/root.fex
