@@ -12,6 +12,6 @@ Executables have been rebuild from the lastest sources found (denx, linux-sunxi)
 
 HOW-TO
 ======
-- Put the LiveSuit img file and rename it to "original.img".
-- Run "menu.h" from a console (for some options root is needed).
+- Put the LiveSuit img file in the directory and rename it to "original.img".
+- Run "menu.sh" from a console (for some options root is needed).
 - Pick an option and have fun.
