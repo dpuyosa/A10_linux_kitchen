@@ -15,3 +15,11 @@ HOW-TO
 - Put the LiveSuit img file in the directory and rename it to "original.img".
 - Run "menu.sh" from a console (for some options root is needed).
 - Pick an option and have fun.
+  
+  
+  
+***
+######If running 64bits you may need this 
+>sudo dpkg --add-architecture i386  
+>sudo apt-get update  
+>sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386  
